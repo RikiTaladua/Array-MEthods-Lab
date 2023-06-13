@@ -24,7 +24,9 @@ console.log(inventors1500s);
   // Array.prototype.map()
   // 2. Map the array of the inventors into a new array containing objects with just the first and last names as properties
   // Hint:  Return a new object literal from the callback (don't mutate the object being passed in to map)
-  
+  const inventorNames = inventors.map(inventor => ({ first: inventor.first, last: inventor.last }));
+console.log(inventorNames);
+
   
   
   // Array.prototype.sort()
