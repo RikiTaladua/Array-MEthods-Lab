@@ -79,6 +79,12 @@ console.log(totalYears);
     'bike', 'walk', 'car', 'van', 'car', 'truck'
   ];
   
+  const formattedNames = people.map(name => {
+    const [last, first] = name.split(', ');
+    return `${first} ${last}`;
+  });
+  console.log(formattedNames);
+  
   // Array.prototype.reduce()
   // 7. Count the number of instances for each of the data items. The reduce should return an object where the keys are 'car', 'truck', etc. and the values are the count.
   // Hint: Since you want to return an object, be sure to pass an empty {} for the initial value of the "accumulator".
