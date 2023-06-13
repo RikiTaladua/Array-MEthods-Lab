@@ -98,6 +98,12 @@ console.log(totalYears);
     { name: 'Lux', year: 2015 }
   ];
   
+  const dataCount = data.reduce((count, item) => {
+    count[item] = (count[item] || 0) + 1;
+    return count;
+  }, {});
+  console.log(dataCount);
+  
   // Array.prototype.some()
   // 8. Check if at least one person is 19 or older?
   // Hint: To get today's year, use the getFullYear method of new Date(), i.e., new Date().getFullYear()
