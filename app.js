@@ -129,7 +129,9 @@ console.log(isEveryone19OrOlder);
 
   // Array.prototype.find()
   // 10. Find the comment with the id of 823423
-  
+  const comment = comments.find(comment => comment.id === 823423);
+console.log(comment);
+
   
   
   // Array.prototype.findIndex()
