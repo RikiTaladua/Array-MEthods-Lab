@@ -62,6 +62,10 @@ console.log(adaInventor);
     'Birrell, Augustine', 'Black, Elk', 'Blair, Robert', 'Blair, Tony',
     'Blake, William'
   ];
+
+  const totalYears = inventors.reduce((total, inventor) => total + (inventor.passed - inventor.year), 0);
+console.log(totalYears);
+
   
   // Array.prototype.map()
   // 6. Map the people array such that the new array consists of strings with the names formatted as "First Last", e.g., "Becker, Carl" should be mapped to "Carl Becker".
