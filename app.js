@@ -38,7 +38,9 @@ console.log(sortedInventors);
   
   // Array.prototype.find()
   // 4. Find the inventor object with the first name of 'Ada'
-  
+  const adaInventor = inventors.find(inventor => inventor.first === 'Ada');
+console.log(adaInventor);
+
   
   
   // Array.prototype.reduce()
