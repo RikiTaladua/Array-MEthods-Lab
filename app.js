@@ -124,6 +124,9 @@ console.log(isOnePerson19OrOlder);
     { text: 'Nice Nice Nice!', id: 542328 }
   ];
   
+  const isEveryone19OrOlder = devs.every(dev => (new Date().getFullYear()) - dev.year >= 19);
+console.log(isEveryone19OrOlder);
+
   // Array.prototype.find()
   // 10. Find the comment with the id of 823423
   
